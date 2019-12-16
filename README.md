@@ -25,6 +25,11 @@ az functionapp create \
 --consumption-plan-location westeurope \
 --storage-account deg16lunchmenusa \
 --runtime javascript
+
+az functionapp config appsettings set \
+--name deg16-lunchmenu \
+--resource-group deg16-lunchmenu-rg \
+--settings TEAMS_URL=<YOUR_TEAMS_WEBHOOK_URL>
 ```
 
 ## Deploy application
