@@ -10,7 +10,7 @@ This Azure Function fetches the lunch menu from deg16.no and publish it to a cha
 
 ## Setup Functions app in Azure
 
-``` bash
+```shell
 az group create --name deg16-lunchmenu-rg --location westeurope
 
 az storage account create \
@@ -34,7 +34,7 @@ az functionapp config appsettings set \
 
 ## Deploy application
 
-``` bash
+```shell
 git clone https://github.com/madsaune/azure-fn-deg16-lunchmenu.git
 cd azure-fn-deg16-lunchmenu
 
