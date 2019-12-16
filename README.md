@@ -1,3 +1,5 @@
+# Publish DEG16 lunchmenu in Teams with Azure Functions
+
 This Azure Function fetches the lunch menu from deg16.no and publish it to a channel in Teams, specified by an environmental variable called `TEAMS_URL`.
 
 ## Prerequisites
@@ -6,7 +8,7 @@ This Azure Function fetches the lunch menu from deg16.no and publish it to a cha
 - Azure CLI
 - [azure-function-core-tools](https://github.com/Azure/azure-functions-core-tools)
 
-### Setup Functions app in Azure
+## Setup Functions app in Azure
 
 ```bash
 az group create --name deg16-lunchmenu-rg --location westeurope
@@ -25,7 +27,7 @@ az functionapp create \
 --runtime javascript
 ```
 
-### Deploy application
+## Deploy application
 
 ```bash
 git clone https://github.com/madsaune/azure-fn-deg16-lunchmenu.git

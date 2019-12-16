@@ -1,0 +1,1 @@
+This function fetches menu from deg16.no website and publish it every weekday 09:00 UTC.
