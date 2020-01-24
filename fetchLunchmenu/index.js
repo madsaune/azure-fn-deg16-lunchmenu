@@ -6,7 +6,7 @@ module.exports = async function (context, myTimer) {
     
     const websiteUrl = "https://braatheneiendom.no/eiendommer-5190/dronning-eufemias-gate-16/praktisk-informasjon";
     const today = new Date().getDay();
-    const weekdays = [ "SØNDAG", "MANDAG", "TIRSDAG", "ONSDAG", "TORSDAG", "FREDAG", "LØRDAG" ];
+    const weekdays = [ "Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag" ];
     let getResp, postResp, title, menu, text;
 
     try {
@@ -23,9 +23,7 @@ module.exports = async function (context, myTimer) {
     
     // If its friday (and since its no saturday)
     // we need to chop off the rest of the menu based on another criteria
-    if (today == 5) {
-        menu.splice(menu.indexOf('BESTILLING AV MAT TIL MØTER'));
-    } else {
+    if (today < 5) {
         menu.splice(menu.indexOf(weekdays[today+1]));
     }
     
