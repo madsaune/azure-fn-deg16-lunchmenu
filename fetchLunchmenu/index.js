@@ -6,7 +6,7 @@ module.exports = async function (context, myTimer) {
     
     const websiteUrl = "https://braatheneiendom.no/eiendommer-5190/dronning-eufemias-gate-16/praktisk-informasjon";
     const today = new Date().getDay();
-    const weekdays = [ "Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag" ];
+    const weekdays = [ "SØNDAG", "MANDAG", "TIRSDAG", "ONSDAG", "TORSDAG", "FREDAG", "LØRDAG" ];
     let getResp, postResp, title, menu, text;
 
     try {
